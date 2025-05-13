@@ -1,0 +1,344 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+/*BODY*/
+    body {
+        background-color: #ffefd5;
+        font-family: arial;
+    }
+
+/*HEADER*/
+    header {
+		display: flex;
+		justify-content: space-between;
+		background-color: #ffefd5;
+		padding: 5px;  
+        margin-left: 25px;
+        margin-right: 25px;
+        border-bottom: 4px solid black;
+	}
+        
+/*FIRST COLUMN*/
+    .firsthead {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .firsthead nav {
+        display: flex;
+        gap: 33px;
+        margin: 0 15px;
+    }
+
+    .firsthead nav a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s;
+    }
+
+    .firsthead nav a:hover {
+        color: darkorange;
+    }
+
+/*CART*/
+    .cart {
+        padding-right: 15px;
+    }
+
+/*WISH HEART*/
+    .wish {
+        position: relative;
+    }
+
+    .wish::after {
+        content: "♡";
+        color: black;
+        font-size: 30px;  
+        position: absolute;
+        top: 33%;
+        left: 100%;
+        transform: translateY(-50%);
+        margin-left: 5px;
+    }
+/*END OF FIRST COLUMN*/
+
+/*SECOND COLUMN*/
+    .secondhead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px; 
+        padding-bottom: 5px; 
+        margin-left: 25px;
+        margin-right: 25px;
+        border-bottom: 4px solid black;
+    }
+
+    .secondhead input {
+        width: 700px;
+        height: 50px;
+        border: 3px solid black;
+        border-radius: 40px;
+        background-color: #ffefd5;
+        padding: 0 20px; 
+        font-size: 18px;
+    }
+
+    .alignment {
+        margin-right: -270px;
+    }
+
+    .search {
+        padding-right: 25px;
+    }
+/*END OF SECOND COLUMN*/
+
+/*THIRD COLUMN*/
+    .navi nav {
+        background-color: #ffefd5;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+	
+	.navi nav a {
+		color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 23px;
+        cursor: pointer;
+        display: inline-block;            
+        padding: 10px 20px;       
+        border-radius: 10px; 
+		transition: transform 0.3s ease, background-color 0.3s ease;
+	}
+	
+	.navi nav a:hover {
+		background-color: #ffd46a;
+        color: white;
+		transform: scale(1.05);
+	}
+
+    .sep {
+        font-size: 35px;
+    }
+/*END OF THIRD COLUMN*/
+
+/*CONTAINER IMAGE*/
+    .container {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .container img {
+        width: 150px;
+        height: 200px;
+        padding: 40px;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        width: 250px;
+        margin: 5px;
+    }
+    
+    .comment img {
+        width: 200px;
+        height: 50px;
+        margin-top: -65px;
+        margin-bottom: -30px;
+    }
+
+    .comment p {
+        font-family: Verdana;
+        font-weight: bold;
+        font-size: 20px;
+        padding-top: 3px;
+        margin-top: 0px;
+    }
+
+    .border {
+        padding: 5px;
+        background-color:#0894b4;
+        border-radius: 6px;
+    }
+/*END OF CONTAINER IMAGE*/     
+    
+/*BANNER*/
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: left;
+        gap: 30px;
+        padding: 20px;
+        background-color:#0894b4;
+        font-family: Verdana;
+        font-weight: bold;
+        font-size: 25px;
+        padding: 25px 18px;
+    }
+
+    .marquee {
+        overflow: hidden;
+        position: relative;
+        background-color: #0894b4;
+    }
+
+    .marquee p {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 55s linear infinite;
+        font-family: Verdana;
+        font-weight: bold;
+        font-size: 25px;
+        color: black;
+    }
+
+    @keyframes marquee {
+        0%   { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+/*END OF BANNER*/    
+
+/*ABOUT US*/
+    .container1 {
+        margin: 15px 20px;
+        padding: 10px 70px;
+    }
+
+    .container1 h1 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container1 h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-size: 35px;
+        text-decoration: underline;
+        padding: 10px 0;
+    }
+
+    .container1 p {
+        font-size: 20px;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .container1 img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px auto;
+    }
+
+    .container1 figure {
+        width: 290px; 
+        height: 320px; 
+        border: 3px solid black;
+        padding: 15px;
+        margin: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .members h2 {
+        font-size: 20px;
+        text-decoration: none;
+        padding: 0 0;
+    }
+
+    .members p {
+        padding: 0 5px;
+        font-size: 20px;
+    }
+
+
+/*END OF ABOUT US*/
+
+/*SEE MORE*/
+    .more {
+        transition: color 0.3s;
+    }
+    .more:hover {
+        color: darkorange;
+    }
+
+/*FOOTER*/
+    footer {
+        margin-top: 30px;
+        background-color: #ffe5b4;
+        padding: 40px 0;
+        font-family: Arial, sans-serif;
+    }
+
+    footer .footer-container {
+        display: flex;
+        justify-content: center;
+        gap: 100px; 
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    footer .footer-section {
+        text-align: left;
+        min-width: 200px;
+    }
+
+    footer h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    footer nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    footer nav a:hover {
+        color: darkorange;
+    }
+
+    .footer-section img {
+        margin: 5px 5px 0 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        object-fit: contain;
+    }
+
+    .payment-logos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 290px;
+        margin-top: 10px;
+    }
+/*END OF FOOTER*/
